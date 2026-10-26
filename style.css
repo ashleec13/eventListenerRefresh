@@ -1,11 +1,11 @@
 :root{
-  --bs-primary:#b45309;   /* burnt orange */
-  --bs-secondary:#78350f; /* chestnut brown */
-  --bs-info:#d97706;      /* amber */
-  --bs-danger:#dc2626;    /* deep red */
-  --bs-success:#15803d;   /* earthy green */
-  --bs-body-bg:#fff7ed;   /* light fall cream */
-  --bs-body-color:#431407;/* dark brown */
+  --bs-primary:#b45309;
+  --bs-secondary:#78350f;
+  --bs-info:#d97706;
+  --bs-danger:#dc2626;
+  --bs-success:#000146;
+  --bs-body-bg:#fff7ed;
+  --bs-body-color:#431407;
 }
 
 body{
@@ -24,7 +24,7 @@ header{
   background-color:#fef3c7; /* warm tan */
 }
 
-/* Hover highlight for the dblclick card (very visible) */
+
 .hoverable{
   transition:box-shadow .15s ease, transform .05s ease, background-color .15s ease, border-color .15s ease;
 }
