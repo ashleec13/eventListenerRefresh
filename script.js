@@ -41,6 +41,7 @@ document.addEventListener('keydown', (e) => {
    Demo 4: Show Time (12-hour format + day)
 ----------------------------------------- */
 
+
 /* -------------------------
    Utility: Clear output
 -------------------------- */
@@ -49,49 +50,3 @@ document.getElementById('btnClear').addEventListener('click', () => {
 })
 
 // NEW Code Starts Here
-
-/* -----------------------------------
-   Option A: Hover highlight + counter
------------------------------------- */
-let hoverCount = 0
-
-dblCard.addEventListener('mouseenter', () => {
-   hoverCount++
-   dblCard.classList.add('mouse-highlight')
-   document.getElementById('out').textContent = `You hovered over the card ${hoverCount} time${hoverCount === 1 ? '' : 's'}.`
-})
-
-dblCard.addEventListener('mouseleave', () => {
-   dblCard.classList.remove('mouse-highlight')
-   document.getElementById('out').textContent = 'The mouse left the card.'
-})
-
-/* -----------------------------
-   Option C: Live input mirror
------------------------------- */
-const nameInput = document.getElementById('nameInput')
-const output = document.getElementById('out')
-
-nameInput.addEventListener('input', () => {
-   if (nameInput.value === '') {
-      output.textContent = 'Type your name to see a greeting.'
-   } else {
-      output.textContent = `Hello, ${nameInput.value}!`
-   }
-})
-
-nameInput.addEventListener('focus', () => {
-   nameInput.classList.add('input-highlight')
-
-   if (nameInput.value === '') {
-      output.textContent = 'Type your name to see a greeting.'
-   }
-})
-
-nameInput.addEventListener('blur', () => {
-   nameInput.classList.remove('input-highlight')
-
-   if (nameInput.value === '') {
-      output.textContent = 'Type your name to see a greeting.'
-   }
-})
