@@ -34,6 +34,16 @@ header{
   box-shadow:0 0 0 0.25rem rgba(220,38,38,.25);
   transform:translateY(-2px);
 }
+.hoverable.mouse-highlight{
+  background-color:#fef08a;
+  border:2px solid #ca8a04;
+  box-shadow:0 0 0 0.25rem rgba(202,138,4,.25);
+}
+
+.name-input.input-highlight{
+  border-color:#15803d;
+  box-shadow:0 0 0 0.25rem rgba(21,128,61,.2);
+}
 
 /* Distinct fall-colored buttons */
 #btnClick{
